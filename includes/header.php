@@ -32,6 +32,7 @@ include_once 'includes/session.php'?>
           <a class="nav-item nav-link" href="registration_company.php">Company Register</a>
           <a class="nav-item nav-link" href="public_vacancy.php">Vacancies</a>
            <a class="nav-item nav-link" href="publiccompany_view.php">Company Listing</a>
+           <a class="nav-item nav-link" href="contactus.php">Contact Us</a>
         </div>
         <div class="navbar-nav ml-auto">
           <?php 

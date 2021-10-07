@@ -13,7 +13,7 @@
      
 
         //Call Crud function
-        $result = $crud->editEmployer($id, $fname, $lname, $gen, $pos,$comp);
+        $result = $crud->editEmployer($id, $fname, $lname, $gen, $pos,$comp,$ema);
         // Redirect to index.php
         if($result){
             header("Location: view_employerrecords.php");
