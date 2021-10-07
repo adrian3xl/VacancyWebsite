@@ -30,7 +30,6 @@ include_once 'includes/session.php'?>
         <div class="navbar-nav mr-auto">
           <a class="nav-item nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="registration_company.php">Company Register</a>
-          <a class="nav-item nav-link" href="createvacancy.php">Create vacancy</a>
           <a class="nav-item nav-link" href="public_vacancy.php">Vacancies</a>
            <a class="nav-item nav-link" href="publiccompany_view.php">Company Listing</a>
         </div>
@@ -42,7 +41,18 @@ include_once 'includes/session.php'?>
           <?php } else { ?>
             <a class="nav-item nav-link" href="#"><span> Welcome <?php echo $_SESSION['username'] ?>! </span> <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="logout.php">Logout <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="viewvacancy.php">Vacancies</a>
+         
+  <div class="dropdown ">
+  <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown">Admin Features
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu bg-dark ">
+    <li>  <a class="nav-item nav-link " href="createvacancy.php">Create vacancy(Admin)</a></li>
+    <li><a class="nav-item nav-link" href="viewvacancy.php">Vacancies(Admin)</a></li>
+    <li><a href="#"></a></li>
+  </ul>
+</div>
+
+
           <?php } ?>
         </div>
       </div>
