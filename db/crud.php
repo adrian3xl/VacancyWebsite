@@ -9,10 +9,10 @@
         }
         
         // function to insert a new record into the employer database
-        public function insertEmployer($fname, $lname, $gen,$pos,$comp){
+        public function insertEmployer($fname, $lname, $gen,$pos,$comp,$ema){
             try {
                 // define sql statement to be executed
-                $sql = "INSERT INTO employer (firstname,lastname,gender,position,company) VALUES (:fname,:lname,:gen,:pos,:comp)";
+                $sql = "INSERT INTO employer (firstname,lastname,gender,position,company,email) VALUES (:fname,:lname,:gen,:pos,:comp,:ema)";
                 //prepare the sql statement for execution
                 $stmt = $this->db->prepare($sql);
                 // bind all placeholders to the actual values
@@ -21,7 +21,7 @@
                 $stmt->bindparam(':gen',$gen);
                 $stmt->bindparam(':pos',$pos);
                 $stmt->bindparam(':comp',$comp);
-           
+                $stmt->bindparam(':ema',$ema);
               
               
 
@@ -35,9 +35,9 @@
             }
         }
 
-        public function editEmployer($id, $fname, $lname, $gen,$pos,$comp){
+        public function editEmployer($id, $fname, $lname, $gen,$pos,$comp,$ema){
            try{ 
-                $sql = "UPDATE `employer` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gen,`position`=:pos,`company`=:comp
+                $sql = "UPDATE `employer` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gen,`position`=:pos,`company`=:comp, `email`=:ema
                  WHERE employer_id = :id ";
                  
                 $stmt = $this->db->prepare($sql);
@@ -48,7 +48,7 @@
                 $stmt->bindparam(':gen',$gen);
                 $stmt->bindparam(':pos',$pos);
                 $stmt->bindparam(':comp',$comp);
-        
+                $stmt->bindparam(':ema',$ema);
 
                 // execute statement
                 $stmt->execute();

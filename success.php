@@ -11,14 +11,14 @@
         $gen = $_POST['gender'];
         $pos = $_POST['position'];
         $comp = $_POST['company'];
- 
+        $ema = $_POST['email'];
       
      
 
         
 
         //Call function to insert and track if success or not
-        $isSuccess = $crud->insertEmployer($fname, $lname, $gen,$pos,$comp);
+        $isSuccess = $crud->insertEmployer($fname, $lname, $gen,$pos,$comp,$ema);
        
         
         if($isSuccess){
@@ -45,7 +45,9 @@
             <p class="card-text">
                 Company: <?php echo $_POST['company'];  ?>
             </p>
-    
+            <p class="card-text">
+                Company email: <?php echo $_POST['email'];  ?>
+            </p>
         </div>
     </div>
     

@@ -31,8 +31,8 @@ include_once 'includes/session.php'?>
           <a class="nav-item nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="registration_company.php">Company Register</a>
           <a class="nav-item nav-link" href="createvacancy.php">Create vacancy</a>
-          <a class="nav-item nav-link" href="viewvacancy.php">Vacancies</a>
-          
+          <a class="nav-item nav-link" href="public_vacancy.php">Vacancies</a>
+           <a class="nav-item nav-link" href="publiccompany_view.php">Company Listing</a>
         </div>
         <div class="navbar-nav ml-auto">
           <?php 
@@ -42,6 +42,7 @@ include_once 'includes/session.php'?>
           <?php } else { ?>
             <a class="nav-item nav-link" href="#"><span> Welcome <?php echo $_SESSION['username'] ?>! </span> <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="logout.php">Logout <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="viewvacancy.php">Vacancies</a>
           <?php } ?>
         </div>
       </div>

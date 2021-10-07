@@ -40,7 +40,12 @@
             <input type="text" class="form-control" id="position" name="position">
         </div>
      
-       
+        <div class="form-group">
+            <label for="email">Company email address</label>
+            <input required type="email" class="form-control" id="email"  name="email" aria-describedby="emailHelp" >
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
         <button type="submit" name="submit" class="btn btn-primary text-white btn-block" style="width: 45rem;">Submit</button>
     </div>
 </div>
