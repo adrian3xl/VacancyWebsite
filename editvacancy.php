@@ -4,6 +4,8 @@
     require_once 'includes/header.php'; 
     require_once 'db/conn.php'; 
 
+    $results = $crud->getEmployer();
+
     if(!isset($_GET['id']))
     {
       
@@ -29,7 +31,7 @@
         </div>
         <div class="form-group">
             <label for="end_date">End Date</label>
-            <input type="Date" class="form-control" value="<?php echo $vacancy['end_date'] ?>" id="end_date" name="end_date">
+            <input type="text" class="form-control" value="<?php echo $vacancy['end_date'] ?>" id="end_date" name="end_date">
         </div>
         <div class="form-group">
             <label for="requirements">Requirements</label>
@@ -47,13 +49,14 @@
             <label for="employer">Company</label>
             <select class="form-control" id="employer" name="employer">
                 <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) {?>
-                   <option value="<?php echo $r['employer_id '] ?>" <?php if($r['employer_id '] == $vacancy['employer_id']) echo 'selected' ?>>
+                   <option value="<?php echo $r['employer_id'] ?>" <?php if($r['employer_id']
+                    == $vacancy['employer_id']) echo 'selected' ?>>
                         <?php echo $r['company']; ?>
                    </option>
                    <?php }?>
             </select>
         </div>
-        <a href="viewvacancy.php" class="btn btn-default">Back To List</a>
+   
         <button type="submit" name="submit" class="btn btn-outline-dark btn-block">Submit</button>
 
     </form>
