@@ -178,7 +178,7 @@
 
         public function getVacancy(){
             try{
-                $sql = "SELECT * FROM `vacancy` a inner join employer s on a.employer_id = s.employer_id";
+                $sql = "SELECT * FROM `vacancy` a inner join vacancy s on a.employer_id = s.employer_id";
                 $result = $this->db->query($sql);
                 return $result;
             }catch (PDOException $e) {

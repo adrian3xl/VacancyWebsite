@@ -6,6 +6,8 @@
 
     // Get all employers
     $results = $crud->getVacancy();
+
+
 ?>
 
 
@@ -18,8 +20,8 @@
         </tr>
         <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) { ?>
            <tr>
-           <td><?php echo $r['employer_id'] ?></td>
-                <td><?php echo $r['company'] ?></td>
+           <td><?php echo $r['vacancy_id'] ?></td>
+                <td><?php echo $r['employer_id'] ?></td>
                 <td><?php echo $r['vacant_position'] ?></td>
 
                 <td>
