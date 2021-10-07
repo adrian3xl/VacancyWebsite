@@ -26,10 +26,14 @@
         Company Representative: <?php echo $result['firstname'] . ' ' . $result['lastname'];  ?>
     </p>
     <p class="card-title">
-        Company Representative: <?php echo $result['firstname'];  ?>
+       Requirements : <?php echo $result['requirements'];  ?>
     </p>
-     
-
+    <p class="card-title">
+       Email : <?php echo $result['email'];  ?>
+    </p>
+    <p class="card-title">
+       End Date : <?php echo $result['end_date'];  ?>
+    </p>
     </div>
 </div>
 

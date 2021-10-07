@@ -1,7 +1,7 @@
 <?php 
 //This includes the session file. This file contains code that starts/resumes a session. 
 //By having it in the header file, it will be included on every page, allowing session capability to be used on every page across the website.
-//include_once 'includes/session.php'?>
+include_once 'includes/session.php'?>
 
 <!doctype html>
 <html lang="en">
@@ -35,11 +35,17 @@
           <a class="nav-item nav-link" href="viewvacancy.php">Vacancies</a>
           
           <a class="nav-item nav-link" href="view_employerrecords.php">Admin view</a>
-         
-        
-    
         </div>
-        
+        <div class="navbar-nav ml-auto">
+          <?php 
+              if(!isset($_SESSION['userid'])){
+          ?>
+            <a class="nav-item nav-link" href="login.php">Login <span class="sr-only">(current)</span></a>
+          <?php } else { ?>
+            <a class="nav-item nav-link" href="#"><span> Welcome <?php echo $_SESSION['username'] ?>! </span> <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="logout.php">Logout <span class="sr-only">(current)</span></a>
+          <?php } ?>
+        </div>
       </div>
     </nav>
     <div class="container">

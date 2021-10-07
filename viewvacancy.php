@@ -13,15 +13,14 @@
 
     <table class="table">
         <tr>
-            <th>#</th>
-            <th>Company</th>
+           
             <th>Vacancy</th>
             <th>Actions</th>
         </tr>
         <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) { ?>
            <tr>
-           <td><?php echo $r['vacancy_id'] ?></td>
-                <td><?php echo $r['employer_id'] ?></td>
+         
+
                 <td><?php echo $r['vacant_position'] ?></td>
 
                 <td>
