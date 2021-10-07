@@ -49,7 +49,7 @@ include_once 'includes/session.php'?>
   <ul class="dropdown-menu bg-dark ">
     <li>  <a class="nav-item nav-link " href="createvacancy.php">Create vacancy(Admin)</a></li>
     <li><a class="nav-item nav-link" href="viewvacancy.php">Vacancies(Admin)</a></li>
-    <li><a href="#"></a></li>
+    <li> <a class="nav-item nav-link" href="view_employerrecords.php">Employers(Admin)</a></li>
   </ul>
 </div>
 

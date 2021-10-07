@@ -4,9 +4,6 @@
     require_once 'includes/header.php'; 
    require_once 'db/conn.php'; 
 ?>
-   
- 
-  
 
     <form method="post" action="success.php" enctype="multipart/form-data">
     <div class="card card-dark bg-dark text-white"  style="width: 70rem;">
@@ -26,25 +23,20 @@ echo '<h5> Welcome to the Vacancy website, our aim is to allow employers to adve
  We take on the duty of populating the site with your vacancies.The site allows for vacancy management and  interested
   persons to view vacancies </h5>';
 
-  echo '<h5> Please visit our contact us page tab if you require more details more detail on how to get started </h5>';
-
+  echo '<h5> Please visit our contact us page tab if you require more details also to see how to get started please see the bottom content in current page </h5>';
 
 ?>
+
+<br>
+
 
 <img src="img/employment.jpeg" alt="employment">
 
 <br>
 <br>
-<br>
-<br>
-
     </div>
 </div>
-
-
 <br>
-<br>
-
 </form>
 
  <form method="post" action="success.php" enctype="multipart/form-data">
