@@ -20,7 +20,7 @@
             <label for="employer_id">Employers in System</label>
             <select class="form-control" id="employer_id" name="employer_id">
                 <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) {?>
-                   <option value="<?php echo $r['employer_id'] ?>"><?php echo $r['employer']; ?></option>
+                   <option value="<?php echo $r['employer_id'] ?>"><?php echo $r['company']; ?></option>
                 <?php }?>
             </select>
         </div>

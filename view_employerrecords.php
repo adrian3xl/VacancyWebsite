@@ -14,16 +14,14 @@
         <tr>
             <th>#</th>
             <th>Company</th>
-            <th>position</th>
-            <th>email</th>
-            <th>contact number</th>
-            <th>Actions</th>
+           
+           <th>Actions</th>
         </tr>
         <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) { ?>
            <tr>
            <td><?php echo $r['employer_id'] ?></td>
                 <td><?php echo $r['company'] ?></td>
-                <td><?php echo $r['position'] ?></td>
+              
 
                 <td>
                     <a href="viewemployerdetails.php?id=<?php echo $r['employer_id'] ?>" class="btn btn-primary">View</a>
