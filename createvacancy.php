@@ -20,7 +20,7 @@
             <label for="employer_id">Employers in System</label>
             <select class="form-control" id="employer_id" name="employer_id">
                 <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) {?>
-                   <option value="<?php echo $r['employer_id'] ?>"><?php echo $r['company']; ?></option>
+                   <option value="<?php echo $r['employer_id'] ?>"><?php echo $r['employer']; ?></option>
                 <?php }?>
             </select>
         </div>
@@ -29,8 +29,8 @@
             <input required type="text" class="form-control" id="vacant_position" name="vacant_position">
         </div>
         <div class="form-group">
-            <label for="end_date">End Date</label>
-            <input type="Date" class="form-control" id="end_date" name="end_date">
+            <label for="end_date">End Date(yyyy-mm-dd)</label>
+            <input type="text" class="form-control" id="end_date" name="end_date">
         </div>
         <div class="form-group">
             <label for="requirements">Requirements</label>

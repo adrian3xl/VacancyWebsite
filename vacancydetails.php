@@ -25,7 +25,9 @@
         <p class="card-title">
         Company Representative: <?php echo $result['firstname'] . ' ' . $result['lastname'];  ?>
     </p>
-      
+    <p class="card-title">
+        Company Representative: <?php echo $result['firstname'];  ?>
+    </p>
      
 
     </div>

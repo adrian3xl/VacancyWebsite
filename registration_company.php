@@ -13,7 +13,7 @@
     <div class="card card-dark bg-dark text-white"  style="width: 48rem;">
     <br>
 
-    <h4 class="text-center"> IT Conference Registration </h4>
+    <h4 class="text-center"> Company Registration </h4>
     <div class="card-body">
     <div class="form-group" >
             <label for="firstname">First Name</label>
@@ -25,7 +25,11 @@
         </div>
         <div class="form-group">
             <label for="gender">Gender</label>
-            <input type="text" class="form-control" id="gender" name="gender">
+            <select class="form-control" id="gender" name="gender">
+            <option >Male</option>
+            <option >Female</option>
+  
+            </select>
         </div>
         <div class="form-group">
             <label for="company">Company</label>

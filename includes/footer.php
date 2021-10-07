@@ -16,11 +16,11 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
         $( function() {
-            $( "#dob" ).datepicker( {
+            $( "#end_date" ).datepicker( {
                 changeMonth: true,
                 changeYear: true,
                 yearRange: "-100:+0",
-                dateFormat: "yy-mm-dd"
+                dateFormat: "yyyy-mm-dd"
             });
         } );
     </script>

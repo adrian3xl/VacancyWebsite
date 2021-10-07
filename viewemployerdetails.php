@@ -23,10 +23,16 @@
             Company: <?php echo $result['company'];  ?>
         </p>
         <p class="card-title">
+        Position: <?php echo $result['position'];  ?>
+    </p>
+     
+        <p class="card-title">
         Company Representative: <?php echo $result['firstname'] . ' ' . $result['lastname'];  ?>
     </p>
-      
-     
+    <p class="card-title">
+        Gender: <?php echo $result['gender'];  ?>
+    </p>
+   
 
     </div>
 </div>

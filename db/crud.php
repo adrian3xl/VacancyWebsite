@@ -156,7 +156,7 @@
                  $stmt = $this->db->prepare($sql);
                  // bind all placeholders to the actual values
                  $stmt->bindparam(':id',$id);
-                 $stmt->bindparam(':emp',$employer);
+                 $stmt->bindparam(':employer',$employer);
                 $stmt->bindparam(':vacant_pos',$vacant_pos);
                 $stmt->bindparam(':enddate',$enddate);
                 $stmt->bindparam(':require ',$require );

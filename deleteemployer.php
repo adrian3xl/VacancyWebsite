@@ -13,7 +13,7 @@
         //Redirect to list
         if($result)
         {
-            header("Location: viewrecords.php");
+            header("Location: view_employerrecords.php");
         }
         else{
             include 'includes/errormessage.php';
