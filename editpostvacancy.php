@@ -1,4 +1,5 @@
 <?php 
+  require_once 'includes/auth_check.php';
     require_once 'db/conn.php';
     //Get values from post operation
     if(isset($_POST['submit'])){

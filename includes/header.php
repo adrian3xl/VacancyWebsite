@@ -30,11 +30,9 @@ include_once 'includes/session.php'?>
         <div class="navbar-nav mr-auto">
           <a class="nav-item nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="registration_company.php">Company Register</a>
-          <a class="nav-item nav-link" href="registration2.php">Individual Register</a>
           <a class="nav-item nav-link" href="createvacancy.php">Create vacancy</a>
           <a class="nav-item nav-link" href="viewvacancy.php">Vacancies</a>
           
-          <a class="nav-item nav-link" href="view_employerrecords.php">Admin view</a>
         </div>
         <div class="navbar-nav ml-auto">
           <?php 

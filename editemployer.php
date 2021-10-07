@@ -2,11 +2,12 @@
     $title = 'Edit Record'; 
 
     require_once 'includes/header.php'; 
+    require_once 'includes/auth_check.php';
     require_once 'db/conn.php'; 
 
     if(!isset($_GET['id']))
     {
-      
+         
         include 'includes/errormessage.php';
         header("Location: view_employerrecords.php");
     }
