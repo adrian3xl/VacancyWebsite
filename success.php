@@ -58,6 +58,9 @@
             <p class="card-text">
                 Company email: <?php echo $_POST['email'];  ?>
             </p>
+            <p class="card-text">
+                EIN: <?php echo $_POST['employer_ident_number'];  ?>
+            </p>
 
           
 

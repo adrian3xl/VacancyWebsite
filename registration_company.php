@@ -45,7 +45,7 @@
             <input required type="email" class="form-control" id="email"  name="email" aria-describedby="emailHelp" >
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
-        <div class="form-groupform-group">
+        <div class="form-group">
             <label for="employer_ident_number">Contact Number</label>
             <input type="text" class="form-control" id="employer_ident_number" name="employer_ident_number" aria-describedby="phoneHelp" >
             <small id="phoneHelp" class="form-text text-muted">We'll never share your number with anyone else.</small>
