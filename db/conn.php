@@ -6,7 +6,7 @@
      $pass = '';
      $charset = 'utf8mb4';
 */
-    $host = ' remotemysql.com';
+    $host = 'remotemysql.com';
     $db = '6mOO6tMdp9';
     $user1 = '6mOO6tMdp9';
     $pass = 'aIhsy9iWbk';
