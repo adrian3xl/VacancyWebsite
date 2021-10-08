@@ -33,7 +33,8 @@
         Gender: <?php echo $result['gender'];  ?>
     </p>
    
-
+    <img src="<?php echo empty($result['avatar_path']) ? "uploads/blank.png" : $result['avatar_path'] ; ?>" class="rounded-circle" style="width: 20%; height: 20%" />
+    
     </div>
 </div>
 

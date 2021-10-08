@@ -9,10 +9,10 @@
         }
         
         // function to insert a new record into the employer database
-        public function insertEmployer($fname, $lname, $gen,$pos,$comp,$ema){
+        public function insertEmployer($fname, $lname, $gen,$pos,$comp,$ema,$avatar_path,$eid){
             try {
                 // define sql statement to be executed
-                $sql = "INSERT INTO employer (firstname,lastname,gender,position,company,email) VALUES (:fname,:lname,:gen,:pos,:comp,:ema)";
+                $sql = "INSERT INTO employer (firstname,lastname,gender,position,company,email,avatar_path,employer_ident_number) VALUES (:fname,:lname,:gen,:pos,:comp,:ema,avatar_path,eid)";
                 //prepare the sql statement for execution
                 $stmt = $this->db->prepare($sql);
                 // bind all placeholders to the actual values
@@ -22,8 +22,8 @@
                 $stmt->bindparam(':pos',$pos);
                 $stmt->bindparam(':comp',$comp);
                 $stmt->bindparam(':ema',$ema);
-              
-              
+                $stmt->bindparam(':avatar_path',$avatar_path);
+                $stmt->bindparam(':eid',$eid);
 
                 // execute statement
                 $stmt->execute();
@@ -35,9 +35,9 @@
             }
         }
 
-        public function editEmployer($id, $fname, $lname, $gen,$pos,$comp,$ema){
+        public function editEmployer($id, $fname, $lname, $gen,$pos,$comp,$ema,$eid){
            try{ 
-                $sql = "UPDATE `employer` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gen,`position`=:pos,`company`=:comp, `email`=:ema
+                $sql = "UPDATE `employer` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gen,`position`=:pos,`company`=:comp, `email`=:ema,`employer_ident_number`=:eid
                  WHERE employer_id = :id ";
                  
                 $stmt = $this->db->prepare($sql);
@@ -49,6 +49,7 @@
                 $stmt->bindparam(':pos',$pos);
                 $stmt->bindparam(':comp',$comp);
                 $stmt->bindparam(':ema',$ema);
+                $stmt->bindparam(':eid',$eid);
 
                 // execute statement
                 $stmt->execute();
