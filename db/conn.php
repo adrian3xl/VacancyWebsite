@@ -1,17 +1,17 @@
 <?php 
     //Development Connection
-      $host = '127.0.0.1';
+  /*    $host = '127.0.0.1';
     $db = 'vacancy_db';
      $user1 = 'root';
      $pass = '';
      $charset = 'utf8mb4';
-/*
+*/
     $host = ' remotemysql.com';
     $db = '6mOO6tMdp9';
     $user1 = '6mOO6tMdp9';
     $pass = 'aIhsy9iWbk';
     $charset = 'utf8mb4';
-*/
+
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
     try{
