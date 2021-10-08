@@ -2,7 +2,7 @@
     $title = 'Success'; 
     require_once 'includes/header.php'; 
     require_once 'db/conn.php';
-
+    require_once 'sendemail.php';
 
     if(isset($_POST['submit'])){
         //extract values from the $_POST array
@@ -23,9 +23,12 @@
         
         if($isSuccess){
           
-           include 'includes/successmessage.php';
+            SendEmail::SendMail($ema, 'Welcome to IT Conference 2019', 'You have successfully registerted your company in system');
+            include 'includes/successmessage.php';
+
         }
         else{
+            
             include 'includes/errormessage.php';
         }
 
