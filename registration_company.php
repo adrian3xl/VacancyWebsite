@@ -46,6 +46,14 @@
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
 
+        <br/>
+        <div class="custom-file">
+            <input type="file" accept="image/*" class="custom-file-input" id="avatar" name="avatar" >
+            <label class="custom-file-label" for="avatar">Choose File</label>
+            <small id="avatar" class="form-text text-info">File Upload is Optional</small>
+
+        </div>
+
         <button type="submit" name="submit" class="btn btn-primary text-white btn-block" style="width: 45rem;">Submit</button>
     </div>
 </div>
