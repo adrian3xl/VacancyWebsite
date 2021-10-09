@@ -13,7 +13,7 @@
         $comp = $_POST['company'];
         $ema = $_POST['email'];
         $eid = $_POST['employer_ident_number'];
-      
+   
         $orig_file = $_FILES["avatar"]["tmp_name"];
         $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
         $target_dir = 'uploads/';
@@ -44,9 +44,11 @@
     <!-- This prints out values that were passed to the action page using method="post" -->
     <div class="card" style="width: 18rem;">
         <div class="card-body">
-        <img src="<?php echo $avatar_path; ?>" class="rounded-circle" style="width: 20%; height: 20%" />
+      
             <p class="card-title">
-                
+            <img src="<?php echo $avatar_path; ?>" class="rounded-circle" style="width: 60%; height: 60%" />
+            <br>
+            <br>
             Company Representative: <?php echo $_POST['firstname'] . ' ' . $_POST['lastname'];  ?>
            </p>
            <p class="card-text">

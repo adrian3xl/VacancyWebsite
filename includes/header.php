@@ -45,11 +45,11 @@ include_once 'includes/session.php'?>
          
   <div class="dropdown ">
   <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown">Admin Features
-  <span class="caret"></span></button>
+  <span class="sr-only"></span></button>
   <ul class="dropdown-menu bg-dark ">
-    <li>  <a class="nav-item nav-link " href="createvacancy.php">Create vacancy(Admin)</a></li>
-    <li><a class="nav-item nav-link" href="viewvacancy.php">Vacancies(Admin)</a></li>
-    <li> <a class="nav-item nav-link" href="view_employerrecords.php">Employers(Admin)</a></li>
+    <li>  <a class="nav-item nav-link " href="createvacancy.php">Create vacancy(Admin)<span class="sr-only">(current)</span></a></li>
+    <li><a class="nav-item nav-link" href="viewvacancy.php">Vacancies(Admin)<span class="sr-only">(current)</span></a></li>
+    <li> <a class="nav-item nav-link" href="view_employerrecords.php">Employer(Admin)<span class="sr-only">(current)</span></a></li>
   </ul>
 </div>
 

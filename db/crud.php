@@ -35,7 +35,7 @@
             }
         }
 
-        public function editEmployer($id, $fname, $lname, $gen,$pos,$comp,$ema,$eid){
+        public function editEmployer($id, $fname, $lname, $gen,$pos,$comp,$ema,$avatar_path,$eid){
            try{ 
                 $sql = "UPDATE `employer` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gen,`position`=:pos,`company`=:comp, `email`=:ema,`employer_ident_number`=:eid
                  WHERE employer_id = :id ";
@@ -49,6 +49,7 @@
                 $stmt->bindparam(':pos',$pos);
                 $stmt->bindparam(':comp',$comp);
                 $stmt->bindparam(':ema',$ema);
+                $stmt->bindparam(':avatar_path',$avatar_path);
                 $stmt->bindparam(':eid',$eid);
 
                 // execute statement
@@ -123,11 +124,11 @@
 
         public function insertVacancy($employer,$vacant_pos,$enddate,$require,$ema,$contact){
             try {
-                // define sql statement to be executed
+            
                 $sql = "INSERT INTO vacancy (employer_id,vacant_position,end_date,requirements,email,phone) VALUES (:employer,:vacant_pos,:enddate,:require,:ema,:contact)";
-                //prepare the sql statement for execution
+              
                 $stmt = $this->db->prepare($sql);
-                // bind all placeholders to the actual values
+            
                 $stmt->bindparam(':employer',$employer);
                 $stmt->bindparam(':vacant_pos',$vacant_pos);
                 $stmt->bindparam(':enddate',$enddate);
@@ -137,8 +138,7 @@
            
               
               
-
-                // execute statement
+ 
                 $stmt->execute();
                 return true;
         
@@ -155,7 +155,7 @@
                   WHERE vacancy_id = :id ";
                   
                  $stmt = $this->db->prepare($sql);
-                 // bind all placeholders to the actual values
+                
                  $stmt->bindparam(':id',$id);
                  $stmt->bindparam(':employer',$employer);
                 $stmt->bindparam(':vacant_pos',$vacant_pos);
@@ -166,7 +166,7 @@
            
          
  
-                 // execute statement
+             
                  $stmt->execute();
                  return true;
             }catch (PDOException $e) {

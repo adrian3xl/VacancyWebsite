@@ -44,8 +44,8 @@
             <input type="text" class="form-control" value="<?php echo $employer['company'] ?>" id="company" name="company">
         </div>
         
-        <a href="viewrecords.php" class="btn btn-default">Back To List</a>
-        <button type="submit" name="submit" class="btn btn-outline-dark btn-block">Submit</button>
+        <a href="view_employerrecords.php" class="btn btn-default">Back To List<span class="sr-only">(current)</span></a></a>
+        <button type="submit" name="submit" class="btn btn-outline-dark btn-block">Submit<span class="sr-only">(current)</span></a></button>
     </form>
 
 <?php } ?>

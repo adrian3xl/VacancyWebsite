@@ -19,6 +19,10 @@
 <div class="card" style="width: 18rem;">
     <div class="card-body">
 
+    <img src="<?php echo empty($result['avatar_path']) ? "uploads/blank.png" : $result['avatar_path'] ; ?>" class="rounded-circle" style="width: 60%; height: 60%" />
+    <br>
+    <br>
+
     <p class="card-text">
             Company: <?php echo $result['company'];  ?>
         </p>
@@ -33,7 +37,7 @@
         Gender: <?php echo $result['gender'];  ?>
     </p>
    
-    <img src="<?php echo empty($result['avatar_path']) ? "uploads/blank.png" : $result['avatar_path'] ; ?>" class="rounded-circle" style="width: 20%; height: 20%" />
+   
     
     </div>
 </div>
