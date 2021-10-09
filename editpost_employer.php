@@ -1,5 +1,5 @@
 <?php 
-  require_once 'includes/auth_check.php';
+ 
     require_once 'db/conn.php';
     //Get values from post operation
     if(isset($_POST['submit'])){
@@ -10,10 +10,17 @@
         $gen = $_POST['gender'];
         $pos = $_POST['position'];
         $comp = $_POST['company'];
-     
+        $ema = $_POST['email'];
+        $eid = $_POST['employer_ident_number'];
+
+        $orig_file = $_FILES["avatar"]["tmp_name"];
+        $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
+        $target_dir = 'uploads/';
+        $file_path = "$target_dir$eid.$ext";
+        move_uploaded_file($orig_file,$file_path);
 
         //Call Crud function
-        $result = $crud->editEmployer($id, $fname, $lname, $gen, $pos,$comp,$ema);
+        $result = $crud->editEmployer($id, $fname, $lname, $gen, $pos,$comp,$ema,$eid,$file_path);
         // Redirect to index.php
         if($result){
             header("Location: view_employerrecords.php");
