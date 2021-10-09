@@ -17,13 +17,13 @@
         $orig_file = $_FILES["avatar"]["tmp_name"];
         $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
         $target_dir = 'uploads/';
-        $avatar_path = "$target_dir$eid.$ext";
-        move_uploaded_file($orig_file,$avatar_path);
+        $file_path = "$target_dir$eid.$ext";
+        move_uploaded_file($orig_file,$file_path);
 
         
 
         //Call function to insert and track if success or not
-        $isSuccess = $crud->insertEmployer($fname, $lname, $gen,$pos,$comp,$ema,$avatar_path,$eid);
+        $isSuccess = $crud->insertEmployer($fname, $lname, $gen,$pos,$comp,$ema,$file_path,$eid);
        
         
         if($isSuccess){
@@ -46,7 +46,7 @@
         <div class="card-body">
       
             <p class="card-title">
-            <img src="<?php echo $avatar_path; ?>" class="rounded-circle" style="width: 60%; height: 60%" />
+            <img src="<?php echo $file_path; ?>" class="rounded-circle" style="width: 60%; height: 60%" />
             <br>
             <br>
             Company Representative: <?php echo $_POST['firstname'] . ' ' . $_POST['lastname'];  ?>
