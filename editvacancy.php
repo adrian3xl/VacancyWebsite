@@ -50,12 +50,12 @@
             <input type="text" class="form-control" value="<?php echo $vacancy['requirements'] ?>" id="requirements" name="requirements">
         </div>
         <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" class="form-control" value="<?php echo $vacancy['email'] ?>" id="email" name="email">
-        </div>
-        <div class="form-group">
             <label for="phone">Phone Number</label>
             <input type="text" class="form-control" value="<?php echo $vacancy['phone'] ?>" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" value="<?php echo $vacancy['email'] ?>" id="email" name="email">
         </div>
    
         <button type="submit" name="submit" class="btn btn-outline-dark btn-block">Submit</button>
