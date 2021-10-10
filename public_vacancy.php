@@ -22,6 +22,8 @@
          
 
                 <td><?php echo $r['vacant_position'] ?></td>
+                <td><?php echo $r['email'] ?></td>
+                <td><?php echo $r['phone'] ?></td>
 
                 <td>
                     <a href="public_vacancy_details.php?id=<?php echo $r['vacancy_id'] ?>" class="btn btn-primary">View</a>

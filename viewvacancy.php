@@ -15,14 +15,15 @@
         <tr>
            
             <th>Vacancy</th>
-            <th>Actions</th>
+            
         </tr>
         <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) { ?>
            <tr>
          
 
                 <td><?php echo $r['vacant_position'] ?></td>
-
+                <td><?php echo $r['email'] ?></td>
+                <td><?php echo $r['phone'] ?></td>
                 <td>
                     <a href="vacancydetails.php?id=<?php echo $r['vacancy_id'] ?>" class="btn btn-primary">View</a>
                     <a href="editvacancy.php?id=<?php echo $r['vacancy_id'] ?>" class="btn btn-warning">Edit</a>

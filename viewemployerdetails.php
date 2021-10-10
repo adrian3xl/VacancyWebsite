@@ -36,7 +36,10 @@
     <p class="card-title">
         Gender: <?php echo $result['gender'];  ?>
     </p>
-   
+    <p class="card-title">
+        email: <?php echo $result['email'];  ?>
+    </p>
+    
    
     
     </div>

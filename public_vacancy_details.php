@@ -32,9 +32,13 @@
        Email : <?php echo $result['email'];  ?>
     </p>
     <p class="card-title">
+       End Date : <?php echo $result['phone'];  ?>
+    </p>
+    <p class="card-title">
        End Date : <?php echo $result['end_date'];  ?>
     </p>
     </div>
+    
 </div>
 
 <br>
