@@ -39,7 +39,7 @@
       
         <div class="form-group">
             <label for="vacant_position">Vacant Position</label>
-            <input type="text" class="form-control" value="<?php echo $vacancy['vacant_position'] ?>" id="vacant_position " name="vacant_position ">
+            <input type="text" class="form-control" value="<?php echo $vacancy['vacant_position'] ?>" id="vacant_position" name="vacant_position">
         </div>
         <div class="form-group">
             <label for="end_date">End Date</label>
@@ -51,7 +51,7 @@
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="text" class="form-control" value="<?php echo $vacancy['email'] ?>" id="email " name="email ">
+            <input type="text" class="form-control" value="<?php echo $vacancy['email'] ?>" id="email" name="email">
         </div>
         <div class="form-group">
             <label for="phone">Phone Number</label>
