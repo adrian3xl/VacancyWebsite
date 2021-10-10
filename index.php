@@ -6,7 +6,7 @@
 ?>
 
     <form method="post" action="success.php" enctype="multipart/form-data">
-    <div class="card card-dark bg-dark text-white"  style="width: 70rem;">
+    <div class="card card-dark bg-dark text-white"  style="width: 110%; height: 50%";>
     <br>
 
     <h1 class="text-center"> Vacancy Find System</h1>
