@@ -56,8 +56,5 @@ echo '<h5> Welcome to the Vacancy website, our aim is to allow employers to adve
 </div>
 
  </form>
-<br>
-<br>
-<br>
-<br>
+
 <?php require_once 'includes/footer.php'; ?>
