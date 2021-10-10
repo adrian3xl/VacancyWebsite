@@ -19,7 +19,7 @@
     
 ?>
 
-    <h1 class="text-center">Edit Record </h1>
+    <h1 class="text-center bg-dark text-white">Edit Record </h1>
 
     <form method="post" action="editpost_employer.php">
         <input type="hidden" name="id" value="<?php echo $employer['employer_id'] ?>" />

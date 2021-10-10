@@ -16,7 +16,7 @@
 ?>
 
 
-<div class="card" style="width: 18rem;">
+<div class="card bg-dark text-white" style="width: 18rem;">
     <div class="card-body">
 
     <p class="card-text">

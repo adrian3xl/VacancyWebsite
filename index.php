@@ -2,7 +2,8 @@
     $title = 'Index'; 
 
     require_once 'includes/header.php'; 
-   require_once 'db/conn.php'; 
+   require_once 'db/conn.php';
+    
 ?>
 
     <form method="post" action="success.php" enctype="multipart/form-data">

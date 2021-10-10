@@ -20,7 +20,7 @@
     
 ?>
 
-    <h1 class="text-center">Edit vacancy </h1>
+    <h1 class="text-center bg-dark text-white">Edit vacancy </h1>
 
     <form method="post" action="editpostvacancy.php">
         <input type="hidden" name="id" value="<?php echo $vacancy['vacancy_id'] ?>" />

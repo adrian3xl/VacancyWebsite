@@ -10,7 +10,7 @@
 ?>
 
 
-    <table class="table">
+    <table class="table bg-dark text-white">
         <tr>
             <th>#</th>
             <th>Company</th>
