@@ -28,7 +28,7 @@
         
         if($isSuccess){
           
-            SendEmail::SendMail($ema, 'Welcome to IT Conference 2019', 'You have successfully registerted your company in system');
+            SendEmail::SendMail($ema, 'Welcome Vacancy web we are happy to welcome you to our services', 'You have successfully registerted your company in system, please send vacancy request through this email reply. Format for vacancy should include vacancy,position,end date and requirements, Best regards');
             include 'includes/successmessage.php';
 
         }
