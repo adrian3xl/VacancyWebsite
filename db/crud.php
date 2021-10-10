@@ -132,7 +132,7 @@
                 $stmt->bindparam(':employer',$employer);
                 $stmt->bindparam(':vacant_pos',$vacant_pos);
                 $stmt->bindparam(':enddate',$enddate);
-                $stmt->bindparam(':require ',$require);
+                $stmt->bindparam(':require',$require);
                 $stmt->bindparam(':ema',$ema);
                 $stmt->bindparam(':contact',$contact);
            
@@ -160,7 +160,7 @@
                  $stmt->bindparam(':employer',$employer);
                 $stmt->bindparam(':vacant_pos',$vacant_pos);
                 $stmt->bindparam(':enddate',$enddate);
-                $stmt->bindparam(':require ',$require );
+                $stmt->bindparam(':require',$require );
                 $stmt->bindparam(':ema',$ema);
                 $stmt->bindparam(':contact',$contact);
            
