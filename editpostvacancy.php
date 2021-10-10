@@ -14,7 +14,7 @@
      
 
         //Call Crud function
-        $result = $crud->editVacancy($id,$employer, $vacant_pos, $enddate, $require, $ema, $contact);
+        $result = $crud->editVacancy($id,$employer,$vacant_pos,$enddate,$require,$ema,$contact);
      
         // Redirect to index.php
         if($result){

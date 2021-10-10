@@ -12,7 +12,7 @@
         public function insertEmployer($fname, $lname, $gen,$pos,$comp,$ema,$avatar_path,$eid){
             try {
                 // define sql statement to be executed
-                $sql = "INSERT INTO employer (firstname,lastname,gender,position,company,email,avatar_path,employer_ident_number) VALUES (:fname,:lname,:gen,:pos,:comp,:ema,avatar_path,eid)";
+                $sql = "INSERT INTO employer (firstname,lastname,gender,position,company,email,avatar_path,employer_ident_number) VALUES (:fname,:lname,:gen,:pos,:comp,:ema,:avatar_path,:eid)";
                 //prepare the sql statement for execution
                 $stmt = $this->db->prepare($sql);
                 // bind all placeholders to the actual values
@@ -37,7 +37,7 @@
 
         public function editEmployer($id, $fname, $lname, $gen,$pos,$comp,$ema,$avatar_path,$eid){
            try{ 
-                $sql = "UPDATE `employer` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gen,`position`=:pos,`company`=:comp, `email`=:ema,`employer_ident_number`=:eid
+                $sql = "UPDATE `employer` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gen,`position`=:pos,`company`=:comp, `email`=:ema,`avatar_path`=:avatar_path,`employer_ident_number`=:eid
                  WHERE employer_id = :id ";
                  
                 $stmt = $this->db->prepare($sql);
@@ -149,7 +149,7 @@
         }
 
 
-        public function editVacancy($id,$employer, $vacant_pos, $enddate,$require ,$ema,$contact){
+        public function editVacancy($id,$employer,$vacant_pos,$enddate,$require,$ema,$contact){
             try{ 
                  $sql = "UPDATE `vacancy` SET `employer_id`=:employer,`vacant_position`=:vacant_pos,`end_date`=:enddate,`requirements`=:require,`email`=:ema,`phone`=:contact
                   WHERE vacancy_id = :id ";
