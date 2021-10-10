@@ -58,6 +58,7 @@ include_once 'includes/session.php'?>
         </div>
       </div>
     </nav>
-    <div class="container" style="background-image: url(img/pic2.jpg); background-attachment: fixed;background-position: 100% 1000%;background-size: auto; background-repeat: no-repeat">
+    <div class="container1" style="background-image: url(img/pic2.jpg); background-attachment: fixed;background-position: 45% 100%;background-size: 96%; background-repeat: no-repeat">
+    <div class="container">
     
     <br/>
